@@ -1,0 +1,585 @@
+<!--
+  ============================================================================
+  PERSONAL WEBSITE  ·  Anna Orlik
+  ============================================================================
+
+  HOW TO EDIT THIS SITE
+  ---------------------
+  Everything you'll ever change lives in the SITE object directly below,
+  between the two rows of ===== signs. You should never need to touch the
+  HTML, CSS, or JavaScript further down.
+
+  • To change your bio, email, or links:   edit the text inside the quotes.
+  • To add a paper:                         copy one { ... } block, paste it
+                                            at the top of the right list, and
+                                            fill in the fields.
+  • To remove a paper:                      delete its { ... } block.
+
+  Rules of thumb when editing:
+    - Keep the quotes "like this" around text.
+    - Keep the comma after each } block (except you can leave or remove the
+      last one; both work).
+    - "links" is a list. Each link is { label: "...", url: "..." }.
+    - Any field you don't want, set to "" (empty) or delete the line.
+    - Writing "Anna Orlik" in an authors line auto-bolds your name.
+
+  To preview: double-click this file to open it in any web browser.
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna Orlik</title>
+<meta name="description" content="Anna Orlik — economist. Macroeconomics, monetary economics, and uncertainty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+/* ==========================================================================
+   ====================  EDIT YOUR SITE BELOW  ==============================
+   ========================================================================== */
+
+const SITE = {
+
+  // ----- Identity (left rail) -------------------------------------------
+  name:      "Anna Orlik",
+  role:      "Principal Economist",
+  affiliation: "Board of Governors of the\nFederal Reserve System",
+
+  // ----- Disclaimer banner (top of page). Set to "" to hide. ------------
+  disclaimer: "The views on this website are my own and not those of the Federal Reserve System or the Federal Reserve Board of Governors.",
+
+  // ----- Links (left rail) ----------------------------------------------
+  // Delete any you don't want. Order is preserved.
+  links: [
+    { label: "Email",          url: "mailto:anna.a.orlik@frb.gov" },
+    { label: "Google Scholar", url: "https://scholar.google.com/scholar?q=author:%22Anna+Orlik%22" },
+    { label: "Fed profile",    url: "https://www.federalreserve.gov/econres/anna-orlik.htm" },
+  ],
+
+  // ----- About paragraph -------------------------------------------------
+  // Plain text. Use \n\n to start a new paragraph.
+  about:
+    "I am a Principal Economist in the Monetary Studies Section at the " +
+    "Federal Reserve Board. My research is in macroeconomics, monetary " +
+    "economics, and financial markets, with a focus on how uncertainty, " +
+    "learning, and model misspecification shape economic outcomes and the " +
+    "design of monetary policy.\n\n" +
+    "Current work studies credible monetary policy under model uncertainty " +
+    "and the role of asset prices in guiding monetary policy  " +
+    "and in identifying policymaker's preferences towards model uncertainty.",
+
+  // ----- A short list of research fields (left rail). Set to [] to hide.
+  fields: ["Macroeconomics", "Monetary economics", "Financial markets"],
+
+  // ----- Education (left rail). Set to [] to hide. ----------------------
+  education: [
+    "Ph.D. Economics, NYU Stern, 2011",
+    "M.Sc. Research in Economics, European University Institute, 2006",
+    "M.Sc. Economics, Warsaw School of Economics, 2004",
+  ],
+
+  /* =========================================================================
+     PUBLISHED PAPERS
+     Each paper is one { } block. Copy a block to add a new one.
+     ========================================================================= */
+  published: [
+
+    {
+      title:  "Understanding Uncertainty Shocks and the Role of Black Swans",
+      authors:"Anna Orlik and Laura Veldkamp",
+      venue:  "Journal of Economic Theory",
+      year:   "2024",
+      links: [
+        { label: "Journal", url: "https://doi.org/10.1016/j.jet.2024.105905" },
+        { label: "Working paper", url: "https://www.federalreserve.gov/econres/feds/understanding-uncertainty-shocks-and-the-role-of-black-swans.htm" },
+        { label: "NBER", url: "https://doi.org/10.3386/w20445" },
+      ],
+      abstract: "",  // optional one-paragraph abstract; shows when present
+    },
+
+    {
+      title:  "Retail Central Bank Digital Currencies: Implications for Banking and Financial Stability",
+      authors:"Sebastian Infante, Kyungmin Kim, Anna Orlik, André F. Silva, and Robert J. Tetlow",
+      venue:  "Annual Review of Financial Economics",
+      year:   "2024",
+      links: [
+        { label: "Journal", url: "https://doi.org/10.1146/annurev-financial-082123-105958" },
+        { label: "FEDS working paper", url: "https://doi.org/10.17016/FEDS.2023.072" },
+      ],
+      abstract: "",
+    },
+
+    {
+      title:  "Inflation Uncertainty from Firms' Perspective, Overconfidence and Credibility of Monetary Policy",
+      authors:"Fernando Borraz, Anna Orlik, and Laura Zacheo",
+      venue:  "B.E. Journal of Macroeconomics",
+      year:   "2024",
+      links: [
+        { label: "Journal", url: "https://doi.org/10.1515/bejm-2023-0161" },
+      ],
+      abstract: "",
+    },
+
+    {
+      title:  "CBDC: Issues and Prospects",
+      authors:"Sebastian Infante, Kyungmin Kim, Anna Orlik, André F. Silva, and Robert J. Tetlow",
+      venue:  "European Economy: Banks, Regulation and the Real Sector",
+      year:   "2024",
+      links: [{ label: "Journal", url: "https://european-economy.eu/2024/cbdc-issues-and-prospects/" },
+],
+      abstract: "",
+    },
+
+    {
+      title:  "What Are Uncertainty Shocks?",
+      authors:"Nicholas Kozeniauskas, Anna Orlik, and Laura Veldkamp",
+      venue:  "Journal of Monetary Economics",
+      year:   "2018",
+      links: [
+        { label: "Journal", url: "https://doi.org/10.1016/j.jmoneco.2018.06.004" },
+        { label: "Working paper (NBER)", url: "https://doi.org/10.3386/w22384" },
+      ],
+      abstract: "",
+    },
+
+  ],
+
+  /* =========================================================================
+     WORKING PAPERS
+     ========================================================================= */
+  workingPapers: [
+
+    {
+      title:  "On the Limits of Sufficient Statistics for Macroeconomic Policy Evaluation",
+      authors:"Anna Orlik",
+      venue:  "Working paper",
+      year:   "2026",
+      links: [
+        { label: "PDF", url: "papers/sufficient-statistics.pdf" },
+      ],
+      abstract: "Characterizes when optimal monetary policy can be evaluated from two sufficient statistics—forecasts of objectives and impulse responses—and identifies three settings where the correction step of Barnichon and Mesters (2023) fails: regime-dependent expectations, multiple equilibria, and the zero lower bound.",
+    },
+
+    {
+      title:  "On Prediction Markets as Instruments of Market Completion",
+      authors:"Anna Orlik and Cristina Scofield",
+      venue:  "Working paper",
+      year:   "2026",
+      links: [
+        { label: "PDF", url: "papers/prediction-markets-completion.pdf" },
+      ],
+      abstract: "Develops a market-completion rationale for prediction markets distinct from information aggregation: binary event contracts act as Arrow securities that expand risk-sharing, quantified through a model as well as asset spanning tests on Kalshi macroeconomic contracts.",
+    },
+
+    {
+      title:  "The Macroeconomic Implications of CBDC: A Review of the Literature",
+      authors:"Sebastian Infante, Kyungmin Kim, Anna Orlik, André F. Silva, and Robert J. Tetlow",
+      venue:  "Finance and Economics Discussion Series",
+      year:   "2022",
+      links: [
+        { label: "FEDS", url: "https://doi.org/10.17016/FEDS.2022.076" },
+      ],
+      abstract: "",
+    },
+
+    {
+      title:  "Issues Regarding the Use of the Policy Rate Tool",
+      authors:"Jeffrey Campbell, Thomas B. King, Anna Orlik, and Rebecca Zarutskie",
+      venue:  "Finance and Economics Discussion Series",
+      year:   "2020",
+      links: [
+        { label: "FEDS", url: "https://doi.org/10.17016/FEDS.2020.070" },
+      ],
+      abstract: "",
+    },
+
+    {
+      title:  "Optimal Monetary Policy under Model Uncertainty without Commitment",
+      authors:"Anna Orlik and Ignacio Presno",
+      venue:  "Federal Reserve Bank of Boston Working Paper",
+      year:   "2013",
+      links: [
+        { label: "Boston Fed", url: "https://www.bostonfed.org/publications/research-department-working-paper/2013/optimal-monetary-policy-under-model-uncertainty-without-commitment.aspx" },
+      ],
+      abstract: "",
+    },
+
+  ],
+
+  /* =========================================================================
+     WORK IN PROGRESS
+     Replace the example below with your current projects. Year/venue/links
+     are optional for unpublished work — leave them "" if not ready to share.
+     ========================================================================= */
+  workInProgress: [
+
+    {
+      title:  "Making Credibility Actionable: A Three-Statistic Framework for Macroeconomic Policy Evaluation",
+      authors:"Anna Orlik",
+      venue:  "",            // leave empty until there's a paper to cite
+      year:   "2026",
+      links:  [],            // e.g. { label: "Draft", url: "draft.pdf" }
+      abstract: "We extend the sufficient-statistics approach of Barnichon and Mesters (2023) (based on impulse responses and conditional forecasts) to environments with imperfect central bank credibility by including a shadow price of credibility as a third sufficient statistic. Empirically, the augmented Optimal Policy Perturbation recommends substantially earlier and more aggressive tightening in 2021 than the standard BM correction, consistent with the Federal Reserve's delayed response having allowed inflation expectations to drift.",
+    },
+
+ {
+      title:  "Marginal Investors as a Guide for Monetary Policy: A Tale of Nominal and Real Risks",
+      authors:"Anna Orlik",
+      venue:  "",            // leave empty until there's a paper to cite
+      year:   "2026",
+      links:  [],            // e.g. { label: "Draft", url: "draft.pdf" }
+      abstract: "The difference between two Hansen–Jagannathan bounds, computed from a portfolio of equities, government bonds, inflation-linked securities, and commodities, separately in nominal and real return space, and decomposed into a component due to inflation risk and a component due to real-nominal pricing stress provides a parsimonious summary of the financial conditions that the Fed systematically responds to—one that nests the Taylor rule, the Fed put, and the financial conditions channel in a single, model-free object.",
+    },
+
+ {
+      title:  "Central Bank’s Intrinsic Preferences and Attitudes Toward Uncertainty: Identification by Means of Asset Prices",
+      authors:"Anna Orlik",
+      venue:  "",            // leave empty until there's a paper to cite
+      year:   "2026",
+      links:  [],            // e.g. { label: "Draft", url: "draft.pdf" }
+      abstract: "How much of what looks like central bank conservatism is genuine preference toward inflation-output gap stabilization, and how much is the shadow of model uncertainty? We establish observational equivalence results for optimal monetary policymaking under both commitment and discretion—six model variants in total, covering near-rational expectations framework of Woodford (2010) and the robust control methodology of Hansen and Sargent (2008), each in isolation and the two frameworks jointly. An informed use of asset prices via an adaptation of Piazzesi and Schneider (2007) restores identification of the policymaker's preferences and attitudes toward model uncertainty.",
+    },
+
+
+  ],
+
+};
+
+/* ==========================================================================
+   ====================  END OF EDITABLE SECTION  ===========================
+   ============== You shouldn't need to change anything below ===============
+   ========================================================================== */
+</script>
+
+<style>
+  :root{
+    --paper:#FBFBFA;
+    --ink:#1A1B1F;
+    --muted:#65686F;
+    --faint:#9A9CA2;
+    --line:#E6E5DF;
+    --accent:#294B7A;
+    --accent-soft:rgba(41,75,122,.09);
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"IBM Plex Sans",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --maxw:1080px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;text-underline-offset:2px;}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+    display:grid;
+    grid-template-columns:260px 1fr;
+    gap:64px;
+    align-items:start;
+  }
+
+  /* ---------- Left rail ---------- */
+  .rail{
+    position:sticky;
+    top:0;
+    padding-top:72px;
+    padding-bottom:48px;
+  }
+  .disclaimer{
+    font-family:var(--mono);
+    font-size:.72rem;
+    line-height:1.5;
+    color:var(--muted);
+    background:var(--accent-soft);
+    border-bottom:1px solid var(--line);
+    padding:10px 28px;
+    text-align:center;
+  }
+  .disclaimer .inner{max-width:var(--maxw);margin:0 auto;}
+  .rail-name{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:2rem;
+    line-height:1.05;
+    letter-spacing:-.01em;
+    margin:0 0 10px;
+  }
+  .rail-role{
+    font-size:.92rem;
+    color:var(--ink);
+    margin:0;
+  }
+  .rail-aff{
+    font-size:.92rem;
+    color:var(--muted);
+    margin:.15rem 0 0;
+    white-space:pre-line;
+  }
+
+  .rail-links{margin:26px 0 0;padding:0;list-style:none;}
+  .rail-links li{margin:0 0 7px;}
+  .rail-links a{
+    font-family:var(--mono);
+    font-size:.8rem;
+    color:var(--ink);
+    display:inline-flex;align-items:center;gap:7px;
+  }
+  .rail-links a::before{
+    content:"";
+    width:14px;height:1px;background:var(--accent);
+    transition:width .18s ease;
+  }
+  .rail-links a:hover{text-decoration:none;color:var(--accent);}
+  .rail-links a:hover::before{width:22px;}
+
+  .rail-meta{margin-top:30px;}
+  .rail-meta h3{
+    font-family:var(--mono);
+    font-size:.68rem;font-weight:500;
+    letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);
+    margin:0 0 8px;
+  }
+  .rail-meta p, .rail-meta li{
+    font-size:.85rem;color:var(--muted);margin:0 0 4px;
+  }
+  .rail-meta ul{list-style:none;padding:0;margin:0;}
+
+  .rail-nav{margin-top:30px;padding-top:22px;border-top:1px solid var(--line);}
+  .rail-nav a{
+    display:block;
+    font-size:.9rem;
+    color:var(--muted);
+    padding:3px 0;
+  }
+  .rail-nav a:hover{color:var(--ink);text-decoration:none;}
+
+  /* ---------- Content ---------- */
+  .content{padding-top:72px;padding-bottom:96px;min-width:0;}
+
+  .lede{
+    font-family:var(--serif);
+    font-size:1.34rem;
+    line-height:1.5;
+    font-weight:400;
+    margin:0 0 2.4rem;
+    max-width:34em;
+  }
+  .about p{
+    margin:0 0 1.1rem;
+    max-width:36em;
+    color:#2c2e34;
+  }
+
+  .section{margin-top:3.4rem;}
+  .section-head{
+    display:flex;align-items:baseline;gap:14px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:9px;margin-bottom:1.6rem;
+  }
+  .section-head h2{
+    font-family:var(--mono);
+    font-size:.74rem;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink);
+    margin:0;
+  }
+  .section-head .count{
+    font-family:var(--mono);
+    font-size:.74rem;color:var(--faint);
+    margin-left:auto;
+  }
+
+  /* ---------- A reference entry ---------- */
+  .ref{
+    padding:0 0 1.5rem;
+    margin:0 0 1.5rem;
+    padding-left:30px;
+    position:relative;
+    border-bottom:1px solid transparent;
+  }
+  .ref + .ref{border-top:1px solid var(--line);padding-top:1.5rem;}
+  .ref .yr{
+    position:absolute;left:0;top:.3rem;
+    font-family:var(--mono);
+    font-size:.72rem;color:var(--faint);
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    letter-spacing:.05em;
+  }
+  .ref-title{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:1.12rem;
+    line-height:1.35;
+    font-weight:400;
+    margin:0 0 .35rem;
+    color:var(--ink);
+  }
+  .ref-authors{font-size:.95rem;color:#2c2e34;margin:0 0 .25rem;}
+  .ref-authors strong{font-weight:600;color:var(--ink);}
+  .ref-venue{
+    font-family:var(--mono);
+    font-size:.78rem;color:var(--muted);
+    margin:0 0 .5rem;
+  }
+  .ref-abstract{
+    font-size:.92rem;color:var(--muted);
+    margin:.1rem 0 .55rem;max-width:38em;
+  }
+  .ref-links{display:flex;flex-wrap:wrap;gap:8px;}
+  .ref-links a{
+    font-family:var(--mono);
+    font-size:.72rem;
+    color:var(--accent);
+    border:1px solid var(--line);
+    padding:3px 9px;border-radius:3px;
+    transition:background .16s ease,border-color .16s ease;
+  }
+  .ref-links a:hover{
+    text-decoration:none;
+    background:var(--accent-soft);
+    border-color:var(--accent);
+  }
+
+  /* ---------- Load animation ---------- */
+  .fade{opacity:0;transform:translateY(8px);animation:rise .6s ease forwards;}
+  @keyframes rise{to{opacity:1;transform:none;}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:820px){
+    .wrap{grid-template-columns:1fr;gap:0;padding:0 22px;}
+    .rail{position:static;padding-top:52px;padding-bottom:8px;
+          border-bottom:1px solid var(--line);}
+    .rail-nav{display:none;}
+    .content{padding-top:36px;}
+    .rail-name{font-size:1.8rem;}
+    .lede{font-size:1.18rem;}
+    .ref .yr{
+      position:static;writing-mode:horizontal-tb;transform:none;
+      display:inline-block;margin-bottom:.2rem;
+    }
+    .ref{padding-left:0;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .fade{animation:none;opacity:1;transform:none;}
+    .rail-links a::before{transition:none;}
+  }
+</style>
+</head>
+<body>
+  <div class="disclaimer" id="disclaimer"></div>
+  <main class="wrap">
+    <aside class="rail" id="rail"></aside>
+    <div class="content" id="content"></div>
+  </main>
+
+<script>
+(function(){
+  const $ = (s)=>document.querySelector(s);
+  const esc = (s)=>String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const boldName = (authors)=> esc(authors);
+
+  /* ----- Disclaimer banner ----- */
+  const disc = $("#disclaimer");
+  if (SITE.disclaimer) { disc.innerHTML = `<div class="inner">${esc(SITE.disclaimer)}</div>`; }
+  else { disc.remove(); }
+
+  /* ----- Left rail ----- */
+  const linksHtml = SITE.links.map(l=>
+    `<li><a href="${esc(l.url)}">${esc(l.label)}</a></li>`).join("");
+
+  const fieldsHtml = (SITE.fields && SITE.fields.length)
+    ? `<div class="rail-meta"><h3>Fields</h3><ul>${
+        SITE.fields.map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div>` : "";
+
+  const eduHtml = (SITE.education && SITE.education.length)
+    ? `<div class="rail-meta"><h3>Education</h3><ul>${
+        SITE.education.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>` : "";
+
+  // Build section nav from non-empty sections
+  const sections = [
+    {id:"about",      label:"About",            items:null},
+    {id:"published",  label:"Published",        items:SITE.published},
+    {id:"working",    label:"Working papers",   items:SITE.workingPapers},
+    {id:"progress",   label:"Work in progress", items:SITE.workInProgress},
+  ];
+  const navHtml = sections
+    .filter(s=> s.id==="about" || (s.items && s.items.length))
+    .map(s=>`<a href="#${s.id}">${esc(s.label)}</a>`).join("");
+
+  $("#rail").innerHTML = `
+    <h1 class="rail-name">${esc(SITE.name)}</h1>
+    <p class="rail-role">${esc(SITE.role)}</p>
+    <p class="rail-aff">${esc(SITE.affiliation)}</p>
+    <ul class="rail-links">${linksHtml}</ul>
+    ${fieldsHtml}
+    ${eduHtml}
+    <nav class="rail-nav">${navHtml}</nav>
+  `;
+
+  /* ----- One reference ----- */
+  function refHtml(p){
+    const links = (p.links||[]).filter(l=>l.url && l.label)
+      .map(l=>`<a href="${esc(l.url)}">${esc(l.label)}</a>`).join("");
+    const venueBits = [p.venue, p.year].filter(Boolean).map(esc).join(" · ");
+    return `
+      <article class="ref">
+        ${p.year ? `<span class="yr">${esc(p.year)}</span>`:""}
+        <h3 class="ref-title">${esc(p.title)}</h3>
+        <p class="ref-authors">${boldName(p.authors)}</p>
+        ${venueBits ? `<p class="ref-venue">${venueBits}</p>`:""}
+        ${p.abstract ? `<p class="ref-abstract">${esc(p.abstract)}</p>`:""}
+        ${links ? `<div class="ref-links">${links}</div>`:""}
+      </article>`;
+  }
+
+  /* ----- A research section ----- */
+  function sectionHtml(id,title,items){
+    if(!items || !items.length) return "";
+    return `
+      <section class="section" id="${id}">
+        <div class="section-head">
+          <h2>${esc(title)}</h2>
+        </div>
+        ${items.map(refHtml).join("")}
+      </section>`;
+  }
+
+  const aboutHtml = `<div class="about">${
+    SITE.about.split("\n\n").map(par=>`<p>${esc(par)}</p>`).join("")}</div>`;
+
+  $("#content").innerHTML = `
+    <div class="fade" id="about">
+      ${aboutHtml}
+    </div>
+    ${sectionHtml("published","Published", SITE.published)}
+    ${sectionHtml("working","Working papers", SITE.workingPapers)}
+    ${sectionHtml("progress","Work in progress", SITE.workInProgress)}
+  `;
+
+  document.title = SITE.name;
+})();
+</script>
+</body>
+</html>
